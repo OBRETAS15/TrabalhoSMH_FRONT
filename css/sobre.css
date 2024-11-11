@@ -1,0 +1,204 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Fixa a imagem no fundo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/logoFundo.png'); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; /* A imagem cobre a tela */
+    opacity: 0.5; /* Ajusta a opacidade da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+#topoNav a:hover{
+    color: blueviolet;
+}
+
+#topoNav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    padding: 10px 0;
+    height: 25%;
+}
+
+#topoNav img#logoPrincipal{
+    height: 225px;
+    width: auto;
+}
+
+#topoNav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topoNav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#topoNav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+}
+
+.selecaoPessoa{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh -152px);
+    justify-content: center;
+}
+
+.selecaoPessoa .lista-de-pessoa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.selecaoPessoa .pessoas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.selecaoPessoa .pessoas .titulo{
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid blueviolet;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.lista-de-pessoa{
+    list-style: none;
+}
+
+
+.lista-de-pessoa .pessoa img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.lista-de-pessoa .pessoa{
+    box-shadow: 0px 0px 24px 5px #fad01a;
+}
+
+.pessoaSelecionada{
+    text-align: center;
+    max-height: 530px;
+}
+
+.pessoaSelecionada .pessoaEstampa{
+    width: 430px;
+    height: 430px;
+    margin-top: 20%;
+}
+
+.pessoaSelecionada .nomePessoa{
+    border-bottom: 2px solid blueviolet;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.pessoaSelecionada .descricaoPessoa{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.descricaoPessoa{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px){
+    #topoNav {
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 15px 0; /* Aumenta o padding para maior área clicável */
+        position: absolute;
+    }
+
+    #topoNav {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        padding: 5px; 
+        position: absolute;/* Ajusta o padding */
+    }
+
+    #topoNav img#logoPrincipal {
+        height: 150px; /* Ajusta o tamanho do logo */
+    }
+
+    #topoNav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        width: 100%; /* Preenche toda a largura */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #topoNav ul li {
+        margin: 5px 0; /* Espaçamento vertical entre os itens do menu */
+    }
+
+    #topoNav ul li a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .selecaoPessoa{
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .selecaoPessoa .pessoas{
+        margin-top: 37px;
+    }
+
+    .selecaoPessoa .pessoas .titulo{
+        font-size: 15px;
+    }
+
+    .selecaoPessoa .lista-de-pessoa{
+        gap: 9px;
+    }
+
+    .selecaoPessoa .pessoas .pessoa img{
+        width: 80px;
+    }
+
+    .pessoaSelecionada .pessoaEstampa{
+        width: 350px;
+        height: 350px;
+    }
+
+    .pessoaSelecionada .descricaoPessoa{
+        width: 80%;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC - LookBooK</title>
+    <link rel="stylesheet" type="text/css" href="./css/principal.css">
+    <link rel="shortcut icon" type="imagex/png" href="./icons/noc.png">
+    <link rel="stylesheet" type="text/css" href="./css/lookbook.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+    <nav id="topoNav">
+        <ul>
+            <img src="imgs/Logo_moc-removebg-preview.png" alt="Logo Principal" id="logoPrincipal"/>
+            <li><a href="catalogo.html">CATÁLOGO</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE NÓS</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrossel de Camisas -->
+    
+    <div class="book camisetas">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook1.png" alt="Foto 01">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook2.png" alt="Foto 02">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook3.png" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook4.png" alt="Foto 04">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook5.png" alt="Foto 05">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="imgs/lookbook6.png" alt="Foto 06">
+                    </div>
+                </div>
+            </div>
+            <!-- Botões do Swiper  -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- swiper para o js  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Iniciar o swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true, // Para repetir os slides
+        });
+    </script>
+
+</body>
+</html>

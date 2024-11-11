@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/noc.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+
+<body>
+
+    <div id="caixa">
+        <div id="cartao">
+            <img id="imagemLogin" src="imgs/Logo_moc-removebg-preview.png" alt="image">
+            <h2 id="tituloLogin">LOGIN</h2>
+
+            <div id="formas">
+                <div>
+                    <label class="tituloInput" for="Usuario">Usuário</label>
+                    <img id="iconePerfil" src="../imgs/do-utilizador.png" alt="image">
+                    <input id="loginUsuario"class="estiloInput" type="text" placeholder="Usuário" />
+                </div>
+
+                <div>
+                    <label class="tituloInput" for="Senha">Senha</label>
+                    <img id="iconeCadeado" src="../imgs/simbolo-de-cadeado-para-interface-de-seguranca.png" alt="image">
+                    <input id="loginSenha" class="estiloInput" type="password" placeholder="Senha" />
+                </div>
+
+                <div class="entrar">
+                    <p>Ainda não tem uma conta? <a id="criarConta" href="cadastro.html">Crie uma conta.</a></p>
+                </div> <!--Fim da div entrar-->
+
+                <button id="botaoEntrar">LOGIN</button>
+            </div> <!--Fim da div formas-->
+        </div> <!--Fim da div cartao-->
+    </div>
+    <script src="./js/login.js"></script>
+
+   
+</body>
+
+</html>

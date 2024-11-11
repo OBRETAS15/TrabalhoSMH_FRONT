@@ -1,0 +1,157 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#caixa { 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+#cartao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color:#2f2942;
+    width: 90%;
+    max-width: 450px;
+    height: 450px;
+    padding: 20px;
+}
+
+#imagemLogin{
+margin-right: 15px;
+width: 150px;
+height: 130px;
+animation: mover 3s infinite alternate;
+}
+
+@keyframes mover {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(20px);
+}
+}
+
+#tituloLogin{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    color: #fad01a;
+}
+
+#subTitulo {
+    font-size: 15px;
+    text-align: center;
+}
+
+#formas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.tituloInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    color: #afb3bb;
+}
+
+.estiloInput {
+    font-family: Arial;
+    margin-bottom: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #514768;
+    text-indent: 30px;
+    height: 40px;
+    width: 280px;
+}
+
+.estiloInput::placeholder {
+    color: #afb3bb;
+    opacity: 0.8;
+}
+
+#iconePerfil{
+    position: absolute;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 7px;
+}
+
+#iconeCadeado {
+    position: absolute;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 7px;
+}
+
+.entrar {
+    color: #afb3bb;
+    margin-bottom: 20px;
+}
+
+#criarConta {
+    text-decoration:none;
+    color: #fad01a;
+}
+
+#botaoEntrar {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    background-color: #fad01a;
+    color: #141d43;
+    box-shadow: 0px 10px 40px -12px #fad01a;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#botaoEntrar:hover {
+    background-color: #ffee00;
+    box-shadow: 0px 12px 50px -10px #fad01a;
+}
+
+
+@media (max-width: 768px) {
+    #tituloLogin {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #cartao {
+        height: auto;
+        padding: 10px;
+    }
+
+    .estiloInput {
+        width: 90%;
+    }
+
+    #botaoEntrar {
+        width: 90%;
+    }
+}

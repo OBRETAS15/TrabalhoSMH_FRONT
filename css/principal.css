@@ -1,0 +1,114 @@
+/*caracteristicas de todas as paginas*/
+/* Barra de navegação */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Fixa a imagem no fundo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/logoFundo.png'); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; /* A imagem cobre a tela */
+    opacity: 0.5; /* Ajusta a opacidade da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+#topoNav a:hover{
+    color: blueviolet;
+}
+
+#topoNav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /*Não lembro de ter sido passado em aula porém faz com que nav fique no topo das camadas*/
+    padding: 10px 0;
+    background-color: white;
+    height: 25%;
+}
+
+#topoNav img#logoPrincipal{
+    height: 225px;
+    width: auto;
+}
+
+#topoNav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topoNav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#topoNav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    font-family:'Roboto', sans-serif; 
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    #topoNav {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        padding: 5px; 
+        position: absolute;/* Ajusta o padding */
+    }
+
+    #topoNav img#logoPrincipal {
+        height: 150px; /* Ajusta o tamanho do logo */
+    }
+
+    #topoNav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        width: 100%; /* Preenche toda a largura */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #topoNav ul li {
+        margin: 5px 0; /* Espaçamento vertical entre os itens do menu */
+    }
+
+    #topoNav ul li a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+    #rodape {
+        clear: both;
+        text-align: center;
+        padding: 15px;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: bold;
+    }
+}
+
+#rodape {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+}

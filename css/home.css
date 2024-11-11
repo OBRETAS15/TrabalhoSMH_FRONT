@@ -1,0 +1,98 @@
+/*Estilizando a pagina principal*/
+
+
+/*Quadrado de promoção*/
+#promo img#promocao{
+    height: 1200px;
+    width: auto;
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha as divs verticalmente no centro, se necessário */
+    justify-content: space-between; /* Distribui as divs uniformemente */
+}
+
+/*Moldura de telefone para o vídeo*/
+#video {
+    margin-top: 64%;
+    width: 200px;
+    padding: 20px;
+    border: 16px solid #333;
+    border-radius: 20px;
+    background-color: #fad01a;
+    box-shadow: 0 0 15px rgba(0, 0, 0,.5);
+    position: relative;
+    left: 50px;
+    margin-right: auto; 
+    display: inline-block;
+}
+
+/* Estilos para o vídeo */
+video {
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Arredondamento dos cantos do vídeo */
+}
+
+
+/*Estilização de descrição*/
+
+#descricao{
+    margin-top: 60%;
+    font-size: 22px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+hr {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Ajusta o padding superior para dispositivos móveis */
+    }
+
+    #topoNav {
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 15px 0; /* Aumenta o padding para maior área clicável */
+        position: absolute;
+    }
+
+    #promo img#promocao {
+        height: auto; /* Ajusta a altura para se adaptar ao dispositivo */
+        max-width: 100%; 
+        margin-top: 350px;/* Garante que a imagem não exceda a largura da tela */
+        position: relative; /* Altera a posição para não ficar fixa */
+        top: 0; /* Reseta a posição vertical */
+        align-items: center; /* Remove a transformação */
+    }
+
+    .container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #video {
+        width: 90%; /* Ampliar a largura do vídeo em dispositivos móveis */
+        margin: 20px 0; /* Adicionar espaço em cima e embaixo */
+        left: 0; /* Remove a posição relativa */
+        margin-left: auto; /* Centraliza o vídeo */
+        margin-right: auto; /* Centraliza o vídeo */
+    }
+
+    #descricao {
+        font-size: 18px; /* Reduzir o tamanho da fonte para melhor legibilidade */
+        margin-top: 30px; /* Ajusta a margem superior */
+    }
+}

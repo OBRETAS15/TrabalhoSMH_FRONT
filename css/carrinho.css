@@ -1,0 +1,109 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.produtos {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.produto:last-child {
+    border-bottom: none;
+}
+
+.button {
+    background-color: blueviolet;
+    color: yellow;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: blueviolet
+}
+
+#logoCarrinho{
+    margin-left: 20px;
+}
+
+/* Estilização do carrinho */
+.carrinho {
+    border-radius: 5px;
+    border: 2px black;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 300px auto;
+    background-color: white;
+    box-shadow: 0 0 8px;
+}
+
+#listaCarrinho {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 175px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: yellow;
+    box-shadow: 0 0 4px;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    #topoNav {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        padding: 5px; 
+        position: absolute;/* Ajusta o padding */
+    }
+
+    #topoNav img#logoPrincipal {
+        height: 150px; /* Ajusta o tamanho do logo */
+    }
+
+    #topoNav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        width: 100%; /* Preenche toda a largura */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #topoNav ul li {
+        margin: 5px 0; /* Espaçamento vertical entre os itens do menu */
+    }
+
+    #topoNav ul li a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+    #rodape {
+        clear: both;
+        text-align: center;
+        padding: 15px;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: bold;
+    }
+}
